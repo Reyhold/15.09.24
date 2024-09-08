@@ -6,7 +6,7 @@ while True:
     else:
         print('Приємно познайомитись', a)
         break
-# djsjdsdjsdj
+
 while True:
     print('Скільки тобі років?')
     b = input('Введіть вік: ')
