@@ -1,19 +1,24 @@
-print('Привіт, як тебе звати?')
 while True:
-    a = input('Введіть ім`я: ')
-    if not a:
-        print('Будь-ласка повтори')
-    else:
-        print('Приємно познайомитись', a)
-        break
-
-while True:
-    print('Скільки тобі років?')
-    b = input('Введіть вік: ')
-    if b >= '18':
-        print('Нічого собі!')
-    elif not b:
-        print('Будь-ласка повтори')
-    else:
-        print('Ти ще такий молодий')
+    num1 = int(input('Введите число 1: '))
+    num2 = int(input('Введите число 2: '))
+    choice = input('Введите действие от 1-5(сумма, разница, произведение, деление и смена чисел соответственно) или 0 чтобы выйти: ')
+    if choice == '1':
+        result = num1 + num2
+        print('Вышло:', result)
+    elif choice == '2':
+        result = num1 - num2
+        print('Вышло:', result)
+    elif choice == '3':
+        result = num1 * num2
+        print('Вышло:', result)
+    elif choice == '4':
+        if num2 != 0:
+            result = num1 // num2
+            print('Вышло:', result)
+        else:
+            print('На ноль делить нельзя')
+    elif choice == '5':
+        print('Возврат...')
+    elif choice == '0':
+        print('Отключение')
         break
