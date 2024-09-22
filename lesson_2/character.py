@@ -11,9 +11,11 @@ class Character:
         self.defence = defence
 
     def show_stats(self):
-        print(
-            f' < {self.name} > \n'
-            f' < Здоров`я: {self.health} > \n'
-            f' < Урон: {self.damage} > \n'
-            f' < Захист: {self.defence} > \n'
-        )
+        print(self)
+
+
+    def __str__(self):
+        return f' < {self.name} > \n' \
+            f' < Здоров`я: {self.health} > \n' \
+            f' < Урон: {self.damage} > \n' \
+            f' < Захист: {self.defence} > \n' \
