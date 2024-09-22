@@ -7,7 +7,7 @@ def attack_message(attacker: Character, target: Character, damage_done: float) :
            f'У {target.name} залишилося {target.health} здоров`я.'
 
 
-player1 = Character('Vasya', 100, 20, 150)
+player1 = Character('Vasya', 100, 20, 20)
 player2 = Character('Petya', 100, 20, 10)
 
 print(f'Створено нового персонажа: {player1.name}')
