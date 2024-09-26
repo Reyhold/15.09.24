@@ -14,6 +14,7 @@ class Character:
         self.damage = damage
         self.defence = defence
         self.damage_offset = self.damage_offset
+        is_alive = True
 
     def show_stats(self):
         print(self)
@@ -32,3 +33,6 @@ class Character:
     def attack(self, target):
         offset = random.randint(0, self.damage * self.damage_offset) * random.choice((-1, 1))
         return target.take_damage(self.damage + offset)
+
+    def is_alive(self):
+        return self.health > 0
